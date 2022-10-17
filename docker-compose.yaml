@@ -1,0 +1,7 @@
+version: "3"
+services:
+    web:
+        container_name: facu-nginx
+        build: .
+        ports:
+            - "90:80"
