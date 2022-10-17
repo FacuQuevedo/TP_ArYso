@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     curl \
     telnetd 
 
-COPY index.html /usr/share/nginx/html
+
 
 
     
