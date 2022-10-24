@@ -1,7 +1,14 @@
 version: "3"
 services:
-    web:
-        container_name: facu-nginx
-        build: .
+    ubuntu:
+        container_name: facundo-ubuntu
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        restart: always
         ports:
-            - "90:80"
+            - "91:80"
+        volumes:
+            - "./nginx-tp:/var/www/html"
+volumes:
+    nginx-tp:

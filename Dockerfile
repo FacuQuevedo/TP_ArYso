@@ -1,13 +1,12 @@
 FROM ubuntu:20.04
-
-WORKDIR /TP_ArYso
+USER root
 
 RUN apt-get update && apt-get install -y \
     nginx \
     curl \
-    telnetd 
+    telnetd
 
+WORKDIR /var/www/html
+COPY index.html . 
 
-
-
-    
+CMD ["nginx", "-g", "daemon off;"]
