@@ -5,6 +5,6 @@ Before to start working with the project, you have to be sure to accomplish the 
     • Have Docker and Docker-compose installed
 
 after you finish installing everything, you can start working with the image we created. 
-- docker pull facundoquevedo1/tp_aryso_ubuntu:latest
+- docker pull docker pull facundoquevedo1/grupo2_tp:latest
 - then all have to do is a docker run. 
 
