@@ -1,12 +1,12 @@
 version: "3"
 services:
     ubuntu:
-        container_name: facundo-ubuntu
+        container_name: grupo1-ubuntu
         build: . 
         restart: always
         ports:
             - "91:80"
         volumes:
-            - "./nginx-tp:/var/www/html"
+            - "./grupo1:/var/www/html"
 volumes:
-    nginx-tp:
+    grupo1:
