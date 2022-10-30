@@ -1,11 +1,11 @@
 version: "3"
 services:
-    ubuntu:
-        container_name: grupo1-ubuntu
+    nginx:
+        container_name: nginx
         build: . 
         restart: always
         ports:
-            - "91:80"
+            - "90:80"
         volumes:
             - "./grupo1:/var/www/html"
 volumes:
